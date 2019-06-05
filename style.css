@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    padding: 30px;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 5vh;
+}
+
+.player-score {
+}
+
+.computer-score {
+}
+
+button {
+    height: 25px;
+    width: 80px;
+    margin: 10px;
+}
+
+.results-window {
+    height: 30vh;
+    width: 60vh;
+    background-color: black;
+    margin: auto;
+}

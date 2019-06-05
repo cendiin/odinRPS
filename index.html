@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type ='text/css' href='style.css'>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function computerPlay() {
-             let RPS = pickRandom(["Rock", "Paper", "Scissors"]);
-            return RPS
-        }
-        function playRound(playerSelection, computerSelection) {
-            if (playerSelection == computerSelection){
-                return "TIE"
-            }
-            if (computerSelection == "Paper"){
-                return "I WIN"
-            }
-            if (computerSelection == "Scissors"){
-                return "I LOSE"
-            }
-        }
-        const playerSelection = 'Rock'
-        const computerSelection = computerPlay()
-        console.log(playRound(playerSelection, computerSelection))
-    </script>
+    <h1>Rock Paper Scissors Game</h1>
+    <p>Please select Rock, Paper or Scissors</p>
+    <br>
+    <div class="buttons">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+    </div>
+    <br>
+    <div class="score">
+        <div class="player-score">Player Score:</div>
+        <div class="player-score-number">0</div>
+        <div class="computer-score">Computer Score:</div>
+        <div class="computer-score-number">0</div>
+    </div>
+    <br>
+    <div class="results-window"></div>
+    <p class="results"></p>
 </body>
 </html>
