@@ -34,6 +34,7 @@ function gameInit() {
     document.getElementById("computer-results").innerHTML = ""
 }
 
+
 function playRound(playerSelection) {
     let computerSelection = computerPlay();
     document.getElementById("computer-results").innerHTML = `The computer chose ${computerSelection}.`;
