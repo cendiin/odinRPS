@@ -8,7 +8,6 @@
 h1 {
     font-size: 60px;
     padding: 30px;
-    font-family: fantasy;
 }
 
 .score-wrapper {
@@ -19,7 +18,7 @@ h1 {
 
 .score {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr 1.5fr 0.5fr;
     height: 5vh;
 }
 
@@ -38,12 +37,12 @@ button {
 
 .results-window {
     height: 30vh;
-    width: 60%;
+    width: 70vh;
     background-color: black;
     margin: auto;
 }
 
-.results {
+.results{
     color: white;
     padding-top: 10px;
 }

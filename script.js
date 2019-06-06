@@ -34,22 +34,19 @@ function gameInit() {
     document.getElementById("computer-results").innerHTML = ""
 }
 
-
 function playRound(playerSelection) {
     let computerSelection = computerPlay();
     document.getElementById("computer-results").innerHTML = `The computer chose ${computerSelection}.`;
    if (playerSelection == computerSelection){
     document.getElementById("results").innerHTML = "You tied this round."
    }
-   if (computerSelection == "Paper" && playerSelection == "Scissors" || 
+   else if (computerSelection == "Paper" && playerSelection == "Scissors" || 
        computerSelection == "Scissors" && playerSelection == "Rock"  ||
        computerSelection == "Rock" && playerSelection == "Paper"){
     document.getElementById("results").innerHTML = "You win this round."
     increaseScore("player-score")
    }
-   if (playerSelection == "Paper" && computerSelection == "Scissors" || 
-       playerSelection == "Scissors" && computerSelection == "Rock"  ||
-       playerSelection == "Rock" && computerSelection == "Paper"){
+   else {
     document.getElementById("results").innerHTML = "You lose this round."
     increaseScore("computer-score")
    }
