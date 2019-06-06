@@ -14,6 +14,7 @@ h1 {
 .score-wrapper {
     max-width: 70%;
     display: inline-block;
+    padding-bottom: 10px;
 }
 
 .score {
