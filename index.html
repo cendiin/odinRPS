@@ -9,23 +9,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <p>Please select Rock, Paper or Scissors</p>
+    <h1>Rock Paper Scissors</h1>
     <br>
     <div class="buttons">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
+        <button id="rock" class="rock" onclick="playRound('Rock')">Rock</button>
+        <button id="paper" class="paper" onclick="playRound('Paper')">Paper</button>
+        <button id="scissors" class="scissors" onclick="playRound('Scissors')">Scissors</button>
     </div>
     <br>
-    <div class="score">
-        <div class="player-score">Player Score:</div>
-        <div class="player-score-number">0</div>
-        <div class="computer-score">Computer Score:</div>
-        <div class="computer-score-number">0</div>
+    <div class="score-wrapper">
+        <div class="score">
+            <div id="player" class="player">Player Score:</div>
+            <div id="player-score">0</div>
+            <div id="computer" class="computer">Computer Score:</div>
+            <div id="computer-score" class="computer-score">0</div>
+        </div>
     </div>
     <br>
-    <div class="results-window"></div>
-    <p class="results"></p>
+    <div id="results-window" class="results-window">
+        <p class="results">Results</p>
+        <p id="computer-results" class="results"></p>
+        <p id="results" class="results"></p>
+    </div>
 </body>
 </html>
