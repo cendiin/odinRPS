@@ -49,8 +49,8 @@ function playRound(playerSelection) {
    if (playerSelection == "Paper" && computerSelection == "Scissors" || 
        playerSelection == "Scissors" && computerSelection == "Rock"  ||
        playerSelection == "Rock" && computerSelection == "Paper"){
-    document.getElementById("results").innerHTML = "You win this round."
-    increaseScore("player-score")
+    document.getElementById("results").innerHTML = "You lose this round."
+    increaseScore("computer-score")
    }
 }
 
